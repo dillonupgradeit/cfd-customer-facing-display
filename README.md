@@ -2,13 +2,19 @@
 ## clover-customer-facing-display
  A clover app for displaying order queue with custom styling and banding, with Twilio SMS & Doordash integration. Use with any browser based device. iPad, iPhone, SmartTV, ChromeCast, Amazon FireStick, Roku, and much more!
 
- ## Install Instructions
+ ## Setup Instructions
  1. Clone Repository
  2. Fill In config-sample.php with your app's info and rename to config.php
- 3. Search repo for "https://veganmob.biz/cfd/" and replace with path to this repo on your server (This Version)
- 4. Upload repo to your server.
- Go into Clover developer account and add Redirect URI you placed in config.php
- 5. That's it!
+ 3. Upload repo to your server.
+ 4. Go into Clover developer account and add Redirect URI you placed in config.php
+ 5. On your clover device, go to 'More Tools'. Search for Customer Facing Display. Click Install.
+ 6. Open 'Customer Facing Display' app. Click 'Authorize' and go through register process to setup your account.
+ 7. Once logged in, go to "Settings" and upload your company's branding.
+ 8. Thats it! 
+
+## Documentation
+ Follow the walkthrough below to access Customer Facing Display from your Employee Smart Device and Customer facing display.
+[Walkthrough & Documentation](https://veganmob.biz/cfd/resources/docs)
 
 ## Screenshots
 ### Employee Controller View
