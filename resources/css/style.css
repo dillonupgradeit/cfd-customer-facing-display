@@ -1,0 +1,640 @@
+@font-face {
+    font-family: "Lato";
+    src: url("https://veganmob.biz/cfd/resources/font/Lato-Black.ttf") format("truetype");
+}
+body,html {
+    padding:0;
+    margin:0;
+    height:100%;
+
+}
+input[type="text" i] {
+    height:35px;
+    padding:0 8px;
+}
+.wrapper {
+    background-image:url('/wp-content/uploads/2020/02/1031408-Group-1.jpg');
+    background-size:cover;
+    padding:0;
+    margin:0;
+    height:100%;
+    display:flex;
+}
+.panel {
+    background-color:transparent;
+    padding:5%;
+}
+.bg-t-white {
+    background:rgba(255,255,255,.8);
+    border-radius:5px;
+    padding:5% 0;
+}
+.btn-link {
+    padding:8px 25px;
+    color:white;
+    background:black;
+    box-shadow: 2px 4px 2px rgba(0,0,0,.4);
+}
+.txt-center {
+    text-align:center;
+}
+.alert-green {
+    background-color: #9ed637;
+    color: #ffffff;
+
+}
+.alert {
+    padding: 20px;
+}
+.alert-red {
+    background-color: #841714;
+    color: #ffffff;
+}
+.closebtn {
+    margin:0 15px;
+   color: #ffffff;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: #aaaaaa;
+}
+.cfd-container {
+    display:flex;
+    /* height:92vh; */
+    width:92vw;
+    margin:4vh auto;
+    border-radius: 5px;
+    box-shadow:2px 2px 1px rgb(100,100,100,0.4);
+    overflow:hidden;
+}
+.cfd-container-cont {
+    background:white;
+    min-height:92vh;
+    width: 92vw;
+    margin: 4vh auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgb(100, 100, 100, 0.4);
+    overflow: hidden;
+}
+.cfd-header {
+    /* border-radius:5px 0 0 5px; */
+ width:50%;
+ flex:1;
+ display:flex;
+ background:#9ed637;
+}
+.cfd-header-content {
+    /* border-radius:5px 0 0 5px; */
+ width:100%;
+ flex:1;
+ display:flex;
+ height:auto;
+ flex-direction: column;
+ justify-content: center;
+}
+.cfd-header-title {
+    color:white;
+    font-size:2em;
+    font-family:"Lato", san-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cfd-header-logo {
+    color:black;
+    background-image:url('../images/Vegan-Mob-Oakland-Logo-CFD.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    max-height:300px;
+    max-width:300px;
+    margin:0 auto;
+}
+.cfd-header-estimate {
+    font-size:1.5em;
+    font-family:"Lato", san-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:100px;
+    color:white;
+}
+.cfd-content{
+    background:#ffffff;
+    /* border-radius:0 5px 5px 0; */
+    /* box-shadow:3px 2px 1px rgb(184, 184, 184,0.4); */
+    width:50%;
+    flex:1;
+    -moz-box-shadow: inset 7px -2px 3px -7px #000000;
+    -webkit-box-shadow: inset 7px -2px 3px -7px #000000;
+    box-shadow: inset 7px -2px 3px -7px #000000;
+    clip-path: inset(0px 0px 0px -15px);
+}
+.cfd-content-full {
+    background: #ffffff;
+    /* border-radius:0 5px 5px 0; */
+    /* box-shadow:3px 2px 1px rgb(184, 184, 184,0.4); */
+    width: 100%;
+    flex: 1;
+    -moz-box-shadow: inset 7px -2px 3px -7px #000000;
+    -webkit-box-shadow: inset 7px -2px 3px -7px #000000;
+    box-shadow: inset 7px -2px 3px -7px #000000;
+    clip-path: inset(0px 0px 0px -15px);
+}
+.cell-frame{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.btn-control {
+    padding:8px 25px;
+    box-shadow:2px 3px 2px rgba(200,200,200,0.4);
+    margin:10px;
+    border-radius:3px;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+.btn-ready {
+    background:#9ed637;
+    color:white;
+}
+.btn-done {
+    background:#b1b1b1;
+    color:white;
+}
+.btn-sent {
+    background:rgba(0,0,0,0.3);
+    color:white;
+}
+.cfd-cell {
+    font-family:Montserrat;
+    font-weight:200;
+    display:flex;
+}
+.controller-cell {
+    border-bottom:1px solid #e1e1e1;
+}
+.cfd-cell span {
+    padding:18px;
+    display: inline-block;
+    width: auto;
+    flex-grow: 1;
+    text-align: left;
+}
+.cell-green {
+    background:#9ed637;
+    -moz-box-shadow: inset 7px -2px 3px -7px #000000;
+    -webkit-box-shadow: inset 7px -2px 3px -7px #000000;
+    box-shadow: inset 7px -2px 3px -7px #000000;
+}
+.cell-red {
+    background:#ff1f1f;
+    -moz-box-shadow: inset 7px -2px 3px -7px #000000;
+    -webkit-box-shadow: inset 7px -2px 3px -7px #000000;
+    box-shadow: inset 7px -2px 3px -7px #000000;
+}
+.admin-wrapper {
+    width:65%;
+    margin:50px auto;
+}
+.image-display {
+    text-align:center;
+}
+.settings-image {
+    width:200px;
+    height:200px;
+    object-fit:contain;
+}
+.clickable {
+    cursor: pointer;
+}
+/* START PROMO-DISPLAY CSS */
+
+html,body {
+    padding:0px;
+    margin:0px;
+
+}
+.absolute {
+    position:absolute;
+    top:0px;
+}
+.hidden {
+    display:none;
+}
+.relative {
+    position:relative;
+}
+.index-bottom {
+    z-index:1;
+}
+.index-last{
+    z-index:2;
+}
+.index-top {
+    z-index:3;
+}
+.promo-display-html {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.eighty-center {
+    width:80%;
+    margin:0 auto;
+}
+.sixty-center {
+    width:60%;
+    margin:0 auto;
+}
+
+.full-screen {
+    width:100vw;
+    height:100vh;
+}
+
+.cover {
+    object-fit:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.new-sticker {
+    background-image:url('/wp-content/uploads/2020/08/new-wb-bbb.png');
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:10vh;
+    min-width:10vh;
+}
+.promo-sticker {
+    background-image:url('/wp-content/uploads/2020/08/promo-bb-bgb.png');
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:35vh;
+    min-width:35vh;
+}
+.doc-section {
+    margin:60px 0;
+    border:1px solid #e1e1e1;
+    border-radius:5px;
+    box-shadow:1px 2px 1px rgba(0,0,0,.4);
+    padding:2%;
+}
+.block {
+    display:block;
+}
+.inline-block {
+    display:inline-block;
+}
+.flex {
+    display:flex;
+}
+.left-expand {
+    display: inline-block;
+    width: auto;
+    flex-grow: 1;
+}
+.vert-align {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-one {
+    flex:1;
+}
+.flex-three {
+    flex:3;
+
+}
+.flex-four {
+    flex:4;
+    min-height:10vh;
+}
+.flex-five {
+    flex:5;
+}
+.bottom-third {
+    position:absolute;
+    bottom:20vh;
+    width:max-content;
+}
+.bottom-right {
+    bottom:0px;
+    right:0px;
+}
+.grid-right {
+    display:grid;
+    justify-content: right;
+}
+
+.bg-green {
+    background-color:#9ed637;
+    color:#9ed637;
+}
+.bg-black {
+    background-color:black;
+    color:black;
+}
+.hundred {
+    width:100%;
+}
+.hundred-tall {
+    height:100vh;
+}
+.bar {
+    width:max-content;
+    padding:20px 50px 0 50px;
+}
+.pad-title {
+    padding:4% 0 2% 0;
+}
+.pad-item {
+    padding:2% 0;
+}
+.txt-bold {
+    font-weight:900;
+}
+.txt-xbig {
+    font-size:15vh;
+}
+.txt-big {
+    font-size:10vh;
+}
+.txt-xlarge {
+    font-size:8vh;
+}
+.txt-large {
+    font-size:6vh;
+}
+.txt-med-large {
+    font-size:5vh;
+}
+.txt-medium {
+    font-size:4vh;
+}
+.txt-small-med {
+    font-size:3vh;
+}
+.txt-small {
+    font-size:2vh;
+}
+.txt-white {
+    color:white;
+}
+.txt-green {
+    color:#9ed637;
+}
+.txt-black {
+    color:black;
+}
+.txt-shadow-green {
+    text-shadow:4px 6px 0px #9ed637;
+}
+.txt-shadow-black {
+    text-shadow:4px 6px 0px black;
+}
+
+/* ANIMATIONS */
+.transition {
+    transition: opacity 2000ms;
+}
+.fade-in {
+    opacity: 1;
+}
+.fade-out {
+    opacity:0;
+}
+.an-one-second {
+    animation-duration: 1s;
+}
+.an-two-seconds{
+    animation-duration: 2s;
+}
+.an-three-seconds{
+    animation-duration: 3s;
+}
+.an-four-seconds {
+    animation-duration: 4s;
+}
+.an-five-seconds {
+    animation-duration: 5s;
+}
+.an-six-seconds {
+    animation-duration: 6s;
+}
+.an-seven-seconds {
+    animation-duration: 7s;
+}
+.an-eight-seconds {
+    animation-duration: 8s;
+}
+.an-nine-seconds {
+    animation-duration: 9s;
+}
+.an-ten-seconds {
+    animation-duration: 10s;
+}
+
+.an-delay-0 {
+    animation-delay: 0s;
+}
+.an-delay-1{
+    animation-delay: 2s;
+}
+.an-delay-2{
+    animation-delay: 2s;
+}
+.an-delay-3 {
+    animation-delay: 3s;
+}
+.an-delay-4 {
+    animation-delay: 4s;
+}
+.an-delay-5 {
+    animation-delay: 5s;
+}
+.an-delay-6 {
+    animation-delay: 6s;
+}
+.an-delay-7 {
+    animation-delay: 7s;
+}
+.an-delay-8 {
+    animation-delay: 8s;
+}
+.an-delay-9 {
+    animation-delay: 9s;
+}
+.an-cross-slide-left {
+    animation-name: crossslide-left;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+}
+    
+@keyframes crossslide-left {
+    0% {
+        margin-left: 100%; 
+    }
+    10% {
+        margin-left: 20%;
+    }
+    90% {
+        margin-left: 15%;
+    }
+    100%{
+        margin-left:-100%;
+    }
+}
+.an-cross-slide-right {
+    animation-name: crossslide-right;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+}
+@keyframes crossslide-right {
+    0% {
+        margin-left: -100%; 
+    }
+    10% {
+        margin-left: 10%;
+    }
+    90% {
+        margin-left: 15%;
+    }
+    100%{
+        margin-left:100%;
+    }
+}
+.an-slide-in-right {
+    animation-name: slidein-right;
+    animation-iteration-count: 1;
+    margin-left: -150%; 
+    animation-fill-mode: forwards;
+}
+@keyframes slidein-right {
+    0% {
+        margin-left: -150%; 
+    }
+    100%{
+        margin-left:0%;
+    }
+}
+.an-slide-in-up {
+    animation-name: slidein-up;
+    animation-iteration-count: 1;
+    margin-top: 100vh; 
+    animation-fill-mode: forwards;
+}
+@keyframes slidein-up {
+    0% {
+        margin-top:100vh; 
+    }
+    100%{
+        margin-top:0vh;
+    }
+}
+.an-slide-out-up {
+    animation-name: slideout-up;
+    animation-iteration-count: 1;
+    margin-top: 0vh; 
+    animation-fill-mode: forwards;
+}
+@keyframes slideout-up {
+    0% {
+        margin-top: 0vh; 
+    }
+    100%{
+        margin-top:-100vh;
+    }
+}
+.an-slide-in-left {
+    animation-name: slidein-left;
+    animation-iteration-count: 1;
+    margin-left:300vw;
+    animation-fill-mode: forwards;
+}
+@keyframes slidein-left {
+    0% {
+        margin-left: 300vw; 
+    }
+    100%{
+        margin-left:0vw;
+    }
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: "SimpleType";
+    src: url("https://veganmob.biz/cfd/resources/font/SimpleType.ttf") format("truetype");
+}
+@font-face {
+    font-family: "NexaRustSlab";
+    src: url("https://veganmob.biz/cfd/resources/font/NexaRustSlab-BlackShadow01.otf") format("truetype");
+}
+@font-face {
+    font-family: "Heavyweight";
+    src: url("https://veganmob.biz/cfd/resources/font/Heavyweight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "NexaRustSans";
+    src: url("https://veganmob.biz/cfd/resources/font/NexaRustSans-Black.otf") format("truetype");
+}
+@font-face {
+    font-family: "NevisBold";
+    src: url("https://veganmob.biz/cfd/resources/font/Nevis-Bold.ttf") format("truetype");
+}
+
+.txt-item-title {
+    font-family:'NexaRustSans';
+}
+.txt-item-desc {
+    font-family:'SimpleType';
+}
+.txt-item-price {
+    font-family:'NexaRustSlab';
+}
+.txt-item-price-2 {
+    font-family:'NevisBold';
+}
+.txt-category {
+    font-family:'Heavyweight';
+}
+
+
+/* END PROMO-DISPLAY CSS */
+
+
+@media screen and (max-width: 772px) {
+    .admin-wrapper {
+        width:92%;
+        margin:50px auto;
+    }
+}
+/*
+@media screen and (max-width: 1004px) and (min-width:774px) {
+
+   
+}
+@media screen and (min-width: 1200px) {
+    
+
+
+}
+
+@media screen and (max-width: 460px) {
+    
+
+} */
