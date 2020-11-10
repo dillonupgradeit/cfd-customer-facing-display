@@ -64,6 +64,10 @@ $site_title = "CFD Display";
         <link href="resources/css/style.css?d=<?php echo time(); ?>" rel="stylesheet" type="text/css" media="(orientation:landscape)" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
+            @font-face {
+                font-family: "Lato";
+                src: url("/resources/font/Lato-Black.ttf") format("truetype");
+            }
             .wrapper {
                 background-image:url('uploads/images/<?php echo $set_bgimage; ?>');
             }

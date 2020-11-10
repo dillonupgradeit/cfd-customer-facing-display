@@ -1,5 +1,7 @@
 <?php 
 	//SAME CONFIG FILE - make sure to replace App Secret, client ID, Redirect URL, imap email settings, and DB info. !!IMPORTANT - Rename this file to config.php !!
+	//PATH TO REPOSITIORY
+	$website_domain = "YOUR_DOMAIN"; // full path to repository on your server. Ex. 'https://example.com/plugins/cfd'
 	//CLOVER API 
     $is_production = true;
 	if($is_production){
@@ -19,7 +21,7 @@
 	$email_server = "EMAIL_SERVER"; // your imap email server
 	$email_username = "EMAIL_ADDRESS"; //your full email address
 	$email_password = "EMAIL_PASSWORD"; // your email password/app paswsword
-	
+
 	//DB
 	date_default_timezone_set("America/Los_Angeles"); 
 	$servername="DB_HOSTNAME"; // 'localhost' or mysql servername (hostname)

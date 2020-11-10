@@ -178,6 +178,12 @@ $site_title = 'Update Settings'
           <link href="resources/css/style.css?d=<?php echo time(); ?>" rel="stylesheet" type="text/css" media="(orientation:portrait)" />
           <link href="resources/css/style.css?d=<?php echo time(); ?>" rel="stylesheet" type="text/css" media="(orientation:landscape)" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <style>
+              @font-face {
+                font-family: "Lato";
+                src: url("/resources/font/Lato-Black.ttf") format("truetype");
+            }
+            </style>
     <head>
     <body>
         <?php  
